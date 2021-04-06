@@ -1,0 +1,21 @@
+main {
+    margin-right: 340px;
+    flex: 1;
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+}
+
+@media (max-width: 800px) {
+    main {
+        margin: 0;
+    }
+
+    main ul {
+        grid-template-columns: 1fr;
+    }
+}

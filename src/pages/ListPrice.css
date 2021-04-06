@@ -1,0 +1,134 @@
+#list-container {
+    width: 100%;
+    font-size: 16px;
+}
+#list-container header {
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #6931ca;
+    background-color: #ffffff;
+    color: #6931ca;
+    box-shadow: 2px 2px 3px gray;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0
+}
+#list-container header button {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    border: none;
+    background-color: transparent;
+    color: #6931ca;
+    border-bottom: 1px solid #6931ca;
+    cursor: pointer;
+}
+#list-container header button:hover {
+    color: #391b6d;
+    border-bottom: 1px solid #391b6d;
+}
+#list-container .filtro {
+    width: 12%;
+    position: fixed;
+    right: 7%;
+    top: 60px;
+}
+#list-container .filtro h5 {
+    color: #6931ca;
+    margin-bottom: 5px;
+}
+#list-container .filtro select {
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+#list-container ul {
+    padding-top: 50px;
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#list-container ul li {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+#list-container ul li .photo {
+    width: 15%;
+    min-height: 60px;
+    max-height: 80px;
+}
+#list-container ul li .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#list-container ul li div {
+    padding: 0 5px;
+    width: 70%;
+}
+
+#list-container ul li div p {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#list-container ul li div .bio {
+    font-size: 0.8em;
+    color: gray;
+    font-weight: normal;
+    margin-top: 3px;
+}
+#list-container ul li span {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #6931ca;
+}
+
+
+/* breakpoints */
+@media (max-width: 740px) {
+    #list-container .filtro {
+        width: 100%;
+        position: fixed;
+        right: 0;
+        background-color: #6931ca;
+        text-align: center;
+        margin-top: -10px;
+        padding: 5px;
+    }
+    #list-container .filtro h5 {
+        color: #ffffff;
+    }
+
+    #list-container ul {
+        padding-top: 110px;
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 530px) {
+    #list-container ul {
+        width: 95%;
+    }
+    #list-container ul li .photo {
+        width: 20%;
+    }
+    #list-container ul li span { 
+        width: 20%;
+    }
+}
