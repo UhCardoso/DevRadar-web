@@ -4,7 +4,7 @@ Projeto do Frontend em ReactJS onde foi criada uma aplicação, com o objetivo d
 Neste projeto eu adicionei uma funcionalidade extra no qual o usuário poderá comentar e visualizar todos os devs e ordena-los com base no preço que cada um cobrar.
 [![](https://thumbs2.imgbox.com/34/3e/Iz6GeGP4_t.png)](http://werlendev.cf/devradar/)<br/>
 (clique na imagem para ver o site)
-
+ 
 ---
 ## Features do projeto
 - **Cadastrar dev:**
